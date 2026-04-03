@@ -1,0 +1,65 @@
+# macOS 系统文件
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
+.TemporaryItems
+.fseventsd
+
+# Python 虚拟环境/缓存
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.tox/
+
+# IDE/编辑器配置
+.idea/
+.vscode/
+.fleet/
+*.swp
+*~
+.project
+.pydevproject
+.settings/
+
+# 医疗敏感数据/大文件（绝对禁止入仓！）
+*.dcm
+*.nii
+*.nii.gz
+*.nrrd
+data/
+dataset/
+raw_data/
+processed_data/
+*.csv
+*.xlsx
+*.json
+!config/*.json
+!scripts/*.json
+
+# 日志/临时文件
+logs/
+*.log
+*.tmp
+.tmp/
+*.out
+
+# AI Agent缓存/配置
+.claude/
+.codebuddy/
+.cagent/
+.zagent/
+.claude.json
