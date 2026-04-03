@@ -35,6 +35,18 @@ dist/
 .pydevproject
 .settings/
 
+# 环境变量与运行产物
+.env
+.env.*
+*.pid
+*.log
+logs/
+medical_agent/logs/
+medical_agent/chroma_db/
+medical_agent/data/*.db
+medical_agent/venv/
+medical_agent/.pytest_cache/
+
 # 医疗敏感数据/大文件（绝对禁止入仓！）
 *.dcm
 *.nii
@@ -51,10 +63,8 @@ processed_data/
 !scripts/*.json
 
 # 日志/临时文件
-logs/
-*.log
-*.tmp
 .tmp/
+*.tmp
 *.out
 
 # AI Agent缓存/配置
